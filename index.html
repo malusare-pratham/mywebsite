@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Shivraj Coaching Classes</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body {
       margin: 0;
@@ -11,52 +12,72 @@
       background: #f5f5f5;
       color: #333;
     }
+
     header {
       background: #2196F3;
       color: white;
       padding: 20px;
       text-align: center;
     }
+
     nav a {
       color: white;
       margin: 0 10px;
       text-decoration: none;
       font-weight: bold;
     }
+
     section {
       padding: 40px 20px;
       background: white;
       margin: 20px;
       border-radius: 8px;
     }
+
     h2 {
       color: #2196F3;
     }
+
     .services li {
       margin: 10px 0;
     }
+
     .btn {
       display: inline-block;
-      padding: 10px 20px;
+      padding: 12px 22px;
       background: #4CAF50;
       color: white;
       text-decoration: none;
       border-radius: 5px;
       margin-top: 10px;
+      font-weight: bold;
     }
+
+    .btn-call {
+      background: #f44336;
+      margin-left: 10px;
+    }
+
     footer {
       background: #333;
       color: white;
       text-align: center;
       padding: 15px;
     }
+
     @media (max-width: 600px) {
       section {
         margin: 10px;
       }
+      .btn {
+        display: block;
+        margin: 10px 0;
+        text-align: center;
+      }
     }
   </style>
 </head>
+
 <body>
 
 <header>
@@ -70,8 +91,10 @@
 
 <section id="about">
   <h2>About Us</h2>
-  <p>आम्ही 5+ वर्षांचा अनुभव असलेले coaching classes आहोत.  
-     Quality education ही आमची ओळख आहे.</p>
+  <p>
+    आम्ही 5+ वर्षांचा अनुभव असलेले coaching classes आहोत.
+    Quality education ही आमची ओळख आहे.
+  </p>
 </section>
 
 <section id="services">
@@ -85,9 +108,24 @@
 
 <section id="contact">
   <h2>Contact Us</h2>
+
   <p>📞 Mobile: 9876543210</p>
   <p>📍 Location: Pune</p>
-  <a href="#" class="btn">Call Now</a>
+
+  <!-- WhatsApp Auto Message Button -->
+  <a 
+    href="https://wa.me/919403926494?text=Namaskar,%20Website%20sathi%20contact%20karaycha%20aahe."
+    class="btn"
+    target="_blank">
+    💬 WhatsApp करा
+  </a>
+
+  <!-- Call Button -->
+  <a 
+    href="tel:9876543210"
+    class="btn btn-call">
+    📞 Call Now
+  </a>
 </section>
 
 <footer>
