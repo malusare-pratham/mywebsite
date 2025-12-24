@@ -1,136 +1,107 @@
 <!DOCTYPE html>
-<html lang="mr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Shivraj Coaching Classes</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cristal</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f5f5;
-      color: #333;
-    }
-
-    header {
-      background: #2196F3;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-
-    nav a {
-      color: white;
-      margin: 0 10px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    section {
-      padding: 40px 20px;
-      background: white;
-      margin: 20px;
-      border-radius: 8px;
-    }
-
-    h2 {
-      color: #2196F3;
-    }
-
-    .services li {
-      margin: 10px 0;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 12px 22px;
-      background: #4CAF50;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      margin-top: 10px;
-      font-weight: bold;
-    }
-
-    .btn-call {
-      background: #f44336;
-      margin-left: 10px;
-    }
-
-    footer {
-      background: #333;
-      color: white;
-      text-align: center;
-      padding: 15px;
-    }
-
-    @media (max-width: 600px) {
-      section {
-        margin: 10px;
-      }
-      .btn {
-        display: block;
-        margin: 10px 0;
-        text-align: center;
-      }
-    }
-  </style>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+<div class="container">
 
 <header>
-  <h1>Shivraj Coaching Classes</h1>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#services">Courses</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<nav>
+  <div class="logo">Cristal</div>
+
+  <ul class="nav-list" id="menu">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+  <div class="nav-con">
+    <a href="#contact">Contact Us</a>
+  </div>
+
+  <div class="menu-icons">
+    <i class="fa-solid fa-bars" id="openbtn"></i>
+  </div>
+</nav>
 </header>
 
-<section id="about">
+<i class="fa-solid fa-xmark" id="closebtn"></i>
+
+<section class="hero" id="home">
+  <div class="info">
+    <h1>In-House Software Products</h1>
+    <p>Smart, scalable software solutions built for real business growth.</p>
+    <a href="#services">Explore Services</a>
+  </div>
+</section>
+
+<section class="about" id="about">
   <h2>About Us</h2>
-  <p>
-    आम्ही 5+ वर्षांचा अनुभव असलेले coaching classes आहोत.
-    Quality education ही आमची ओळख आहे.
-  </p>
+  <p>We build reliable and high-performance digital products engineered by skilled developers.</p>
 </section>
 
-<section id="services">
-  <h2>Our Courses</h2>
-  <ul class="services">
-    <li>SSC / Banking तयारी</li>
-    <li>Foundation batches</li>
-    <li>Weekly tests</li>
-  </ul>
+<section class="services" id="services">
+  <h2>Our Services</h2>
+  <div class="services-grid">
+    <div class="service-card">
+      <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
+      <h3>Web Development</h3>
+    </div>
+    <div class="service-card">
+      <img src="https://images.unsplash.com/photo-1558655146-d09347e92766">
+      <h3>Mobile Apps</h3>
+    </div>
+    <div class="service-card">
+      <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995">
+      <h3>Customized Software</h3>
+    </div>
+  </div>
 </section>
 
-<section id="contact">
+<section class="portfolio" id="portfolio">
+  <h2>Our Portfolio</h2>
+  <div class="portfolio-grid">
+    <div class="portfolio-item">
+      <img src="https://images.unsplash.com/photo-1518770660439-4636190af475">
+      <h4>Business Website</h4>
+    </div>
+    <div class="portfolio-item">
+      <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d">
+      <h4>Mobile App UI</h4>
+    </div>
+    <div class="portfolio-item">
+      <img src="https://images.unsplash.com/photo-1603575448360-153f093fd0b2">
+      <h4>Software Dashboard</h4>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
   <h2>Contact Us</h2>
-
-  <p>📞 Mobile: 9876543210</p>
-  <p>📍 Location: Pune</p>
-
-  <!-- WhatsApp Auto Message Button -->
-  <a 
-    href="https://wa.me/919403926494?text=Namaskar,%20Website%20sathi%20contact%20karaycha%20aahe."
-    class="btn"
-    target="_blank">
-    💬 WhatsApp करा
-  </a>
-
-  <!-- Call Button -->
-  <a 
-    href="tel:9876543210"
-    class="btn btn-call">
-    📞 Call Now
-  </a>
+  <form class="contact-form">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea rows="4" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
 </section>
 
 <footer>
-  © 2025 Shivraj Coaching Classes
+  © 2025 Cristal. All Rights Reserved.
 </footer>
 
+</div>
+
+<script src="js/script.js"></script>
 </body>
 </html>
