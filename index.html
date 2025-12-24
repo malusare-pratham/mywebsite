@@ -1,107 +1,178 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="mr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cristal</title>
+<title>Punam Mithai House</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<link rel="stylesheet" href="css/style.css">
+<style>
+body{
+  margin:0;
+  font-family:'Poppins',sans-serif;
+  background:#fff7ef;
+}
+
+/* HEADER */
+header{
+  background:#8b0000;
+  color:white;
+  padding:25px;
+  text-align:center;
+}
+header h1{margin:0;font-size:34px;}
+header p{margin:6px 0;font-size:16px;}
+
+/* OFFER */
+.offer{
+  background:#ffd700;
+  padding:12px;
+  text-align:center;
+  font-weight:bold;
+}
+
+/* SECTION */
+section{padding:40px 20px;}
+section h2{
+  text-align:center;
+  color:#8b0000;
+  margin-bottom:30px;
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:22px;
+}
+
+/* CARD */
+.card{
+  background:white;
+  border-radius:14px;
+  overflow:hidden;
+  box-shadow:0 8px 20px rgba(0,0,0,0.15);
+  transition:0.3s;
+}
+.card:hover{transform:translateY(-8px);}
+
+.card img{
+  width:100%;
+  height:170px;
+  object-fit:cover;
+}
+
+.card .content{
+  padding:18px;
+  text-align:center;
+}
+.price{
+  color:green;
+  font-weight:bold;
+  margin-top:5px;
+}
+
+/* REVIEWS */
+.review{
+  max-width:650px;
+  margin:15px auto;
+  background:white;
+  padding:15px;
+  border-left:5px solid #8b0000;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* FOOTER */
+footer{
+  background:#8b0000;
+  color:white;
+  text-align:center;
+  padding:20px;
+}
+
+/* WHATSAPP */
+.whatsapp{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:white;
+  padding:16px 18px;
+  border-radius:50%;
+  font-size:22px;
+  text-decoration:none;
+  box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+</style>
 </head>
 
 <body>
-<div class="container">
 
 <header>
-<nav>
-  <div class="logo">Cristal</div>
-
-  <ul class="nav-list" id="menu">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#services">Services</a></li>
-    <li><a href="#portfolio">Portfolio</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-
-  <div class="nav-con">
-    <a href="#contact">Contact Us</a>
-  </div>
-
-  <div class="menu-icons">
-    <i class="fa-solid fa-bars" id="openbtn"></i>
-  </div>
-</nav>
+  <h1>🍬 Punam Mithai House</h1>
+  <p>शुद्ध | ताज्या | घरगुती मिठाया</p>
 </header>
 
-<i class="fa-solid fa-xmark" id="closebtn"></i>
+<div class="offer">
+  🎉 आजची ऑफर: 1 किलो वर 10% सूट 🎉
+</div>
 
-<section class="hero" id="home">
-  <div class="info">
-    <h1>In-House Software Products</h1>
-    <p>Smart, scalable software solutions built for real business growth.</p>
-    <a href="#services">Explore Services</a>
-  </div>
-</section>
+<section>
+  <h2>आमच्या प्रसिद्ध मिठाया</h2>
 
-<section class="about" id="about">
-  <h2>About Us</h2>
-  <p>We build reliable and high-performance digital products engineered by skilled developers.</p>
-</section>
+  <div class="grid">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950" alt="Kaju Katli">
+      <div class="content">
+        <h3>काजू कतली</h3>
+        <p>Premium काजूपासून तयार</p>
+        <div class="price">₹900 / kg</div>
+      </div>
+    </div>
 
-<section class="services" id="services">
-  <h2>Our Services</h2>
-  <div class="services-grid">
-    <div class="service-card">
-      <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
-      <h3>Web Development</h3>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1617196037304-9f8e4e3c38c6" alt="Modak">
+      <div class="content">
+        <h3>मोदक</h3>
+        <p>घरगुती खास मोदक</p>
+        <div class="price">₹450 / kg</div>
+      </div>
     </div>
-    <div class="service-card">
-      <img src="https://images.unsplash.com/photo-1558655146-d09347e92766">
-      <h3>Mobile Apps</h3>
-    </div>
-    <div class="service-card">
-      <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995">
-      <h3>Customized Software</h3>
-    </div>
-  </div>
-</section>
 
-<section class="portfolio" id="portfolio">
-  <h2>Our Portfolio</h2>
-  <div class="portfolio-grid">
-    <div class="portfolio-item">
-      <img src="https://images.unsplash.com/photo-1518770660439-4636190af475">
-      <h4>Business Website</h4>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1627662168223-7df9c4b6c6f4" alt="Gulab Jamun">
+      <div class="content">
+        <h3>गुलाबजाम</h3>
+        <p>मऊ आणि रसाळ</p>
+        <div class="price">₹320 / kg</div>
+      </div>
     </div>
-    <div class="portfolio-item">
-      <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d">
-      <h4>Mobile App UI</h4>
-    </div>
-    <div class="portfolio-item">
-      <img src="https://images.unsplash.com/photo-1603575448360-153f093fd0b2">
-      <h4>Software Dashboard</h4>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1627662056597-7a6fdc5d7bf4" alt="Peda">
+      <div class="content">
+        <h3>पेढे</h3>
+        <p>साताऱ्याचे प्रसिद्ध पेढे</p>
+        <div class="price">₹380 / kg</div>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="contact" id="contact">
-  <h2>Contact Us</h2>
-  <form class="contact-form">
-    <input type="text" placeholder="Your Name" required>
-    <input type="email" placeholder="Your Email" required>
-    <textarea rows="4" placeholder="Your Message" required></textarea>
-    <button type="submit">Send Message</button>
-  </form>
+<section>
+  <h2>ग्राहकांचे अभिप्राय ⭐</h2>
+
+  <div class="review">“Punam Mithai House ची मिठाई नेहमी ताजी आणि स्वादिष्ट असते.” ⭐⭐⭐⭐⭐</div>
+  <div class="review">“मोदक आणि काजू कतली खूपच छान!” ⭐⭐⭐⭐⭐</div>
+  <div class="review">“दर वाजवी आणि quality best.” ⭐⭐⭐⭐☆</div>
 </section>
 
 <footer>
-  © 2025 Cristal. All Rights Reserved.
+  <p>📍 पत्ता: मेन रोड, आपल्या शहराचे नाव</p>
+  <p>📞 संपर्क: 9876543210</p>
+  <p>© 2025 Punam Mithai House</p>
 </footer>
 
-</div>
+<a class="whatsapp" href="https://wa.me/919876543210" target="_blank">💬</a>
 
-<script src="js/script.js"></script>
 </body>
 </html>
